@@ -1,0 +1,329 @@
+:root {
+  /* In questa lista possiamo salvare dei colori personalizzati e specifici. 
+  Inoltre possiamo anche modificare i valori senza dover sostituirli ogni volta nei selettori. */
+  --grigio: #dddddd;
+  --nerochiaro: #333;
+  --neroscuro: #111;
+  --bianco: #ffffff;
+  --arancione: #ff7f50;
+  --arancionescuro: #ff6b35; 
+}
+
+/* Importo di un file per il font */
+@font-face {
+  font-family: ChakraPetch;
+  src: url(./src/fonts/ChakraPetch-Bold.ttf);
+}
+
+/* "ChakraPetch" è il Font di formattazione dell'intera pagina. */
+/* "margin: 0;" Rimuove il margine del browser di default. In modo che non ci siano spazi vuoti indesiderati. */
+body {
+  font-family: ChakraPetch;
+  margin: 0;
+}
+
+#articolo-principale {
+  width: 800px;
+}
+
+#h1_articolo3 {
+  font-size: 60px;
+}
+
+main article {
+  background-color: var(--arancione);
+  padding: 30px;
+  padding-bottom: 50px;
+  border: 1px solid var(--nerochiaro);
+}
+
+.progetti {
+  padding-bottom: 500px;
+}
+
+#h1_articolo2 {
+  font-size: 60px;
+}
+
+#h1_articolo_principale {
+  font-size: 80px;
+}
+
+#h3_articolo_principale {
+  font-size: 30px;
+}
+
+#p_articolo_principale {
+  font-size: 20px;
+  padding: 50px;
+  background-color: var(--arancionescuro);
+  border-radius: 10px;
+}
+
+/* Navbar */
+.nav_list {
+  background-color: var(--nerochiaro);
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.elemento_navlist {
+  display: inline;
+  float: left; 
+  font-size: 25px;
+}
+
+.elemento_navlist a {
+  display: block;
+  padding: 20px 16px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--bianco);
+}
+
+.elemento_navlist a:hover {
+  background-color: var(--neroscuro);
+}
+
+div.galleria {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.galleria:hover {
+  border: 1px solid #777;
+}
+
+div.galleria img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  width: 4.37rem;
+  height: 4.37rem;
+  background: #e9e9e9;
+  padding: 0px 0px;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: var(--arancionescuro);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.btn:hover::before {
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+#SkillBox {
+  width: 95%;
+  height: auto;
+  margin: 40px auto;
+  background-color: #fff;
+
+  /* border: 1px solid #cdcdcd; */
+  padding: 10px;
+  border-radius:50px;
+  -o-border-radius:20px;
+  -webkit-border-radius:20px;
+  -ms-border-radius:20px;
+  -moz-border-radius:20px;
+}
+#SkillBox img {
+  width: 20%;
+  height: 10%;
+  margin: auto 35%;
+  padding: 10px;
+}
+.SkillBar {
+  width: 90%;
+  height: 50px;
+  position: relative;
+  border-radius:20px;
+  /* background: rgba(17, 17, 17, .3); */
+  background: #c5c2ff;
+  margin: 20px auto;
+}
+
+
+#Skill-HTML {
+  width: 80%;
+  border-radius:20px;
+  animation: Animate-HTML 4s;
+  -webkit-animation: Animate-HTML 4s;
+  -moz-animation: Animate-HTML 4s;
+  -o-animation: Animate-HTML 4s;
+  height: 50px;
+  position: absolute;
+  background-color: var(--arancione);
+}
+@keyframes Animate-HTML {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-webkit-keyframes Animate-HTML {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-moz-keyframes Animate-HTML {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-o-keyframes Animate-HTML {
+  from {
+  width: 10px;
+}
+to {
+  width: 90%}
+}#Skill-CSS {
+  animation: Animate-CSS 5s;
+  -webkit-animation: Animate-CSS 5s;
+  -moz-animation: Animate-CSS 5s;
+  -o-animation: Animate-CSS 5s;
+  border-radius:20px;
+  width: 40%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--arancione);
+}
+@keyframes Animate-CSS {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}@-webkit-keyframes Animate-CSS {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}@-moz-keyframes Animate-CSS {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}@-o-keyframes Animate-CSS {
+  from {
+  width: 10px;
+}
+to {
+  width: 70%}
+}#Skill-Python {
+  border-radius:20px;
+  animation: Animate-Python 5s;
+  -webkit-animation: Animate-Python 5s;
+  -moz-animation: Animate-Python 5s;
+  -o-animation: Animate-Python 5s;
+  width: 15%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--arancione);
+}
+@keyframes Animate-Python {
+  from {
+  width: 10px;
+}
+to {
+  width: 15}
+}@-webkit-keyframes Animate-Python {
+  from {
+  width: 10px;
+}
+to {
+  width: 15%}
+}@-moz-keyframes Animate-Python {
+  from {
+  width: 10px;
+}
+to {
+  width: 15}
+}@-o-keyframes Animate-Python {
+  from {
+  width: 10px;
+}
+to {
+  width: 15%}
+}#Skill-Cplus {
+  animation: Animate-Cplus4s;
+  -webkit-animation: Animate-Cplus 4s;
+  -moz-animation: Animate-Cplus 4s;
+  -o-animation: Animate-Cplus 4s;
+  border-radius:20px;
+  width: 30%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--arancione);
+}
+@keyframes Animate-Cplus {
+  from {
+  width: 10px;
+}
+to {
+  width: 30%}
+}@-webkit-keyframes Animate-Cplus {
+  from {
+  width: 10px;
+}
+to {
+  width: 30%}
+}@-moz-keyframes Animate-Cplus {
+  from {
+  width: 10px;
+}
+to {
+  width: 30%}
+}@-o-keyframes Animate-Cplus {
+  from {
+  width: 10px;
+}
+to {
+  width: 30%}
+}
+.Skill-Area {
+  z-index: 1;
+  float: left;
+  /* position: absolute; */
+  margin-top: 8px;
+  margin-left: 15px;
+  text-shadow: none;
+  color: #fff;
+}

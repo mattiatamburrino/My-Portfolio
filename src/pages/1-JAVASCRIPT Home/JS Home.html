@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - JavaScript</title>
+    <link rel="shortcut icon" href="javascript.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Aggiungi la classe "animazione-titolo" al tuo titolo -->
+        <h1 class="animazione-titolo">Il JavaScript</h1>
+        <a class="titolo" href="../index.html"><p>By Tamburrino Mattia</p></a><br>
+        <div>
+            <a class="bottone_html" href="../1-HTML Home/HTML Home.html">HTML</a>
+            <a class="bottone_css" href="../1-CSS Home/CSS Home.html">CSS</a>
+            <a class="bottone_js" href="./JS Home.html">JAVASCRIPT</a>    
+        </div>
+    </header><br>
+    
+    <!-- Collegamento a tutti gli esercizi -->
+    <main>
+        <ul>
+            <li>
+
+            </li>
+        </ul>
+    </main>
+    
+    <script>
+        // Ottieni l'elemento con la classe "animazione-titolo"
+        var titleElement = document.querySelector('.animazione-titolo');
+    
+        // Ottieni il testo dall'elemento
+        var text = titleElement.innerText;
+    
+        // Pulisci il testo dall'elemento
+        titleElement.innerText = '';
+    
+        // Itera attraverso ogni lettera e spazio nel testo
+        for (var i = 0; i < text.length; i++) {
+            // Crea un nuovo elemento span per ogni carattere o spazio
+            var span = document.createElement('span');
+    
+            // Imposta il testo dell'elemento span
+            span.innerText = text[i] === ' ' ? '\u00A0' : text[i]; // U+00A0 rappresenta uno spazio non interrompibile
+    
+            // Imposta l'animazione con uno spazio di 0.1s tra ogni elemento
+            span.style.animation = 'scrivi 0.5s forwards ' + (i * 0.1) + 's';
+    
+            // Aggiungi l'elemento span all'elemento del titolo
+            titleElement.appendChild(span);
+        }
+    </script>      
+</body>
+</html>
