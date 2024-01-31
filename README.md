@@ -1,4 +1,4 @@
-Questa repository è dedicata alla pubblicazione del mio Sito Web tramite Github Pagesù
+Questa repository è dedicata alla pubblicazione del mio Sito Web tramite Github Pages
 
 ⚠️ Il codice non è protetto da alcuna Licenza o Copyright. Ognuno può prendere spunto
 
