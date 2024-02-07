@@ -13,7 +13,7 @@
 /* Importo di un file per il font */
 @font-face {
   font-family: ChakraPetch;
-  src: url(./src/fonts/ChakraPetch-Bold.ttf);
+  src: url(../Il-Mio-Portfolio/src/fonts/ChakraPetch-Bold.ttf);
 }
 
 /* "ChakraPetch" è il Font di formattazione dell'intera pagina. */
