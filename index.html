@@ -7,9 +7,11 @@
         <meta name="keywords" content="web development, HTML5, CSS3, C++, Python developer">
         <meta name="author" content="Tamburrino Mattia">
         <title>Tamburrino Mattia | Home</title>
-        <!-- Importazioni di File -->
+        <!-- Importo lo stile dal file style.css -->
+        <!-- Importo un icona del mio sitoweb, con la favicon -->
+        <!-- Importo uno script che mi permette di utilizzare icone svg personalizzate -->
         <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="../Il-Mio-Portfolio/src/imgs/Html5_Logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./src/favicon.png" type="image/x-icon">
         <script src="https://kit.fontawesome.com/4ae0eabde4.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -20,6 +22,7 @@
                     <li class="elemento_navlist">
                         <img style="width: 60px; padding: 10px;" src="./src/imgs/Html5_Logo.png">
                     </li>
+                    <!-- Nella Barra di Navigazione ho inserito per ongi link un id che rimanda in una porzione della pagina -->
                     <li class="elemento_navlist"><a href="./index.html">HOME</a></li>
                     <li class="elemento_navlist"><a href="#h1_articolo_principale">CHI SONO</a></li>
                     <li class="elemento_navlist"><a href="#h1_articolo2">SKILLS</a></li>
@@ -32,7 +35,7 @@
         <main>
             <article class="articolo">
                 <h1 id="h1_articolo_principale">Benvenuto nel mio Portfolio! 👋🏻 </h1>
-                <h3 id="h3_articolo_principale"> Mi chiamo Mattia Tamburrino</h3>
+                <h3 id="h3_articolo_principale">Mi chiamo Mattia Tamburrino</h3>
                 <div id="articolo-principale">
                     <p id="p_articolo_principale">
                         Sono uno studente italiano di 16 anni con la passione per lo sviluppo web e l'informatica. Questo spazio online è la mia vetrina personale, dove condivido le mie esperienze, conoscenze e progetti legati a questo affascinante mondo digitale.
@@ -46,12 +49,13 @@
                             <i class="fa-brands fa-linkedin" style="font-size:50px; color: black; padding: 20px;"></i>
                         </a>
                         <a href="https://github.com/Skull17" target="_blank" style="text-decoration: none;">
-                            <i class="fa fa-github" style="font-size:50px; color: black; padding: 20px;"></i>
+                            <i class="fa fa-github" style="font-size:50px; color: black;"></i>
                         </a>
                     </div>
                 </div>
             </article>
 
+            <!-- Sezione delle mie abilità nella programmazione. -->
             <article class="articolo">
                 <h2 id="h1_articolo2" >Skills</h2>
                 <div id="SkillBox">
@@ -78,37 +82,65 @@
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="35" height="35" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 361" class="Skill-Area iconify" data-icon="logos:css-3" data-inline="false" data-width="35" data-height="35" style="transform: rotate(360deg);"><path fill="#264DE4" d="M127.844 360.088L23.662 331.166L.445 70.766h255.11l-23.241 260.36z"></path><path fill="#2965F1" d="m212.417 314.547l19.86-222.49H128V337.95z"></path><path fill="#EBEBEB" d="m53.669 188.636l2.862 31.937H128v-31.937zm-5.752-64.641l2.903 31.937H128v-31.937zM128 271.58l-.14.037l-35.568-9.604l-2.274-25.471h-32.06l4.474 50.146l65.421 18.16l.147-.04z"></path><path d="M60.484 0h38.68v16.176H76.66v16.176h22.506v16.175H60.484zm46.417 0h38.681v14.066h-22.505v2.813h22.505v32.352h-38.68V34.46h22.505v-2.813H106.9zm46.418 0H192v14.066h-22.505v2.813H192v32.352h-38.681V34.46h22.505v-2.813H153.32z"></path><path fill="#FFF" d="m202.127 188.636l5.765-64.641H127.89v31.937h45.002l-2.906 32.704H127.89v31.937h39.327l-3.708 41.42l-35.62 9.614v33.226l65.473-18.145l.48-5.396l7.506-84.08z"></path></svg>
                       </div>
                     </div>
+
+                    <div class="SkillBar">
+                      <div id="Skill-JS">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="35" height="35" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" class="Skill-Area iconify" data-icon="logos:javascript" data-inline="false" data-width="35" data-height="35" style="transform: rotate(360deg);"><path fill="#F7DF1E" d="M0 0h256v256H0z"></path><path d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257c0-18.044 13.747-31.792 35.228-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.732 12.03c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"></path></svg>
+                      </div>
+                    </div>
+                  </div>
                   </div>
             </article>
 
+            <!-- Sezione per i miei progetti. -->
             <article class="progetti">
                 <h2 id="h1_articolo3">Progetti</h2>
                 <div class="galleria">
-                    <a target="_blank" href="./src/pages/1-HTML Home/HTML Home.html">
-                      <img src="./src/imgs/archivio_html.png" alt="Html" width="1000" height="800">
-                    </a>
-                    <div class="desc">Archivio HTML</div>
-                  </div>
+                  <a target="_blank" href="./src/pages/1-HTML Home/HTML Home.html">
+                    <img src="./src/imgs/archivio_html.png" alt="Html" width="180" height="120"> <!-- Modifica la larghezza e l'altezza dell'immagine -->
+                  </a>
+                  <div class="desc">Archivio HTML</div>
+                </div>                
                   
-                  <div class="galleria">
-                    <a target="_blank" href="./src/pages/1-CSS Home/CSS Home.html">
-                      <img src="./src/imgs/archivio_css.png" alt="Css" width="1000" height="800">
-                    </a>
-                    <div class="desc">Archivio CSS</div>
-                  </div>
+                <div class="galleria">
+                  <a target="_blank" href="./src/pages/1-CSS Home/CSS Home.html">
+                    <img src="./src/imgs/archivio_css.png" alt="Css" width="1000" height="800">
+                  </a>
+                  <div class="desc">Archivio CSS</div>
+                </div>
 
-                  <div class="galleria">
-                    <a target="_blank" href="./src/pages/1-JAVASCRIPT Home/JS Home.html">
-                      <img src="./src/imgs/archivio_javascript.png" alt="JavaScript" width="1000" height="800">
-                    </a>
-                    <div class="desc">Archivio JavaScript Coming Soon...</div>
-                  </div>
+                <div class="galleria">
+                  <a target="_blank" href="./src/pages/1-JAVASCRIPT Home/JS Home.html">
+                    <img src="./src/imgs/archivio_javascript.png" alt="JavaScript" width="1000" height="800">
+                  </a>
+                  <div class="desc">Archivio JavaScript Coming Soon...</div>
+                </div>
             </article>
         </main>
 
         <!-- Footer e informazioni finali della Pagina -->
-        <footer>
-
-        </footer>
+        <footer class="py-20 bg-zinc-900">
+          <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap -mx-4 mb-8 lg:mb-16">
+              <div class="w-full lg:w-1/3 px-4 mb-12 lg:mb-0"> 
+                <a class="text-gray-600 text-2xl leading-none" href="/" aria-label="homepage">
+                  <img class="h-8" src="./src/imgs/Html5_Logo.png" alt="logo di codegrind" width="32" height="32">
+                </a>
+                <p class="mt-5 mb-6 max-w-xs text-gray-400 leading-loose">
+                  Sono uno studente italiano di 16 anni con la passione per lo sviluppo web e l'informatica. Questo è il mio portfolio!
+                </p>
+              </div> 
+              <div>
+                <h3 class="text-gray-600">Risorse</h3>
+                <ul>
+                  <li><a href="#h1_articolo_principale">Chi Sono</a></li>
+                  <li><a href="#h1_articolo2">Skills</a></li>
+                  <li><a href="#h1_articolo3">Progetti</a></li>
+                </ul>
+                <p>Copyright © 2024 Tamburrino Mattia</p>
+              </div>              
+            </div>
+          </div>
+        </footer>    
     </body>
 </html>
