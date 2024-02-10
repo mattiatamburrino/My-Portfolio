@@ -10,10 +10,15 @@
   --arancionescuroscuro: #b33000; 
 }
 
-/* Importo di un file per il font */
+/* Importo di 2 file per il font */
 @font-face {
   font-family: ChakraPetch;
-  src: url(../Il-Mio-Portfolio/src/fonts/ChakraPetch-Bold.ttf);
+  src: url(./src/fonts/ChakraPetch-Bold.ttf);
+}
+
+@font-face {
+  font-family: SatisfyRegular;
+  src: url(./src/fonts/Satisfy-Regular.ttf);
 }
 
 /* "ChakraPetch" è il Font di formattazione dell'intera pagina. */
@@ -28,9 +33,14 @@ body {
   padding: 25px;
   border: 20px solid var(--arancionescuro);
   border-style: ridge;
+  float: left;
 }
 
 #h1_articolo3 {
+  font-size: 60px;
+}
+
+#h1_articolo2 {
   font-size: 60px;
 }
 
@@ -39,23 +49,36 @@ main article {
   background-color: var(--arancione);
   padding: 30px;
   padding-bottom: 50px;
-  border: 1px solid var(--nerochiaro);
+  border: 10px solid var(--nerochiaro);
+  border-style: ridge;
+  border-bottom: none;
+  border-top: none;
+}
+
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(  0.0deg) }
+ 10% { transform: rotate(-10.0deg) }
+ 20% { transform: rotate( 12.0deg) }
+ 30% { transform: rotate(-10.0deg) }
+ 40% { transform: rotate(  9.0deg) }
+ 50% { transform: rotate(  0.0deg) }
+100% { transform: rotate(  0.0deg) }
 }
 
 .progetti {
-  padding-bottom: 500px;
-}
-
-#h1_articolo2 {
-  font-size: 60px;
+  padding-bottom: 330px;
 }
 
 #h1_articolo_principale {
   font-size: 80px;
-}
-
-#h3_articolo_principale {
-  font-size: 30px;
 }
 
 #p_articolo_principale {
@@ -104,6 +127,10 @@ div.galleria {
   float: left;
 }
 
+#comingsoongalleria {
+  height: 177px;
+}
+
 div.galleria:hover {
   border: 30px solid var(--bianco);
   border-style: ridge;
@@ -120,7 +147,7 @@ div.desc {
 }
 
 #SkillBox {
-  width: 40%;
+  width: 46.1%;
   height: auto;
   background-color: #fff;
   /* border: 1px solid #cdcdcd; */
@@ -138,7 +165,7 @@ div.desc {
 }
 
 .SkillBar {
-  width: 90%;
+  width: 95%;
   height: 50px;
   position: relative;
   border-radius:20px;
@@ -148,12 +175,12 @@ div.desc {
 
 /* Formattazione delle skill di programmazione */
 #Skill-HTML {
-  width: 80%;
   border-radius:20px;
-  animation: Animate-HTML 4s;
-  -webkit-animation: Animate-HTML 4s;
-  -moz-animation: Animate-HTML 4s;
-  -o-animation: Animate-HTML 4s;
+  animation: Animate-HTML 2s;
+  -webkit-animation: Animate-HTML 2s;
+  -moz-animation: Animate-HTML 2s;
+  -o-animation: Animate-HTML 2s;
+  width: 80%;
   height: 50px;
   position: absolute;
   background-color: var(--arancione);
@@ -185,12 +212,12 @@ to {
 }
 
 #Skill-CSS {
-  animation: Animate-CSS 5s;
-  -webkit-animation: Animate-CSS 5s;
-  -moz-animation: Animate-CSS 5s;
-  -o-animation: Animate-CSS 5s;
+  animation: Animate-CSS 2s;
+  -webkit-animation: Animate-CSS 2s;
+  -moz-animation: Animate-CSS 2s;
+  -o-animation: Animate-CSS 2s;
   border-radius:20px;
-  width: 40%;
+  width: 65%;
   height: 50px;
   position: absolute;
   background-color: var(--arancione);
@@ -200,34 +227,34 @@ to {
   width: 10px;
 }
 to {
-  width: 40%}
+  width: 65%}
 } @-webkit-keyframes Animate-CSS {
   from {
   width: 10px;
 }
 to {
-  width: 40%}
+  width: 65%}
 } @-moz-keyframes Animate-CSS {
   from {
   width: 10px;
 }
 to {
-  width: 40%}
+  width: 65%}
 } @-o-keyframes Animate-CSS {
   from {
   width: 10px;
 }
 to {
-  width: 70%}
+  width: 65%}
 } 
 
 #Skill-Python {
   border-radius:20px;
-  animation: Animate-Python 5s;
-  -webkit-animation: Animate-Python 5s;
-  -moz-animation: Animate-Python 5s;
-  -o-animation: Animate-Python 5s;
-  width: 15%;
+  animation: Animate-Python 2s;
+  -webkit-animation: Animate-Python 2s;
+  -moz-animation: Animate-Python 2s;
+  -o-animation: Animate-Python 2s;
+  width: 25%;
   height: 50px;
   position: absolute;
   background-color: var(--arancione);
@@ -260,12 +287,12 @@ to {
 } 
 
 #Skill-Cplus {
-  animation: Animate-Cplus4s;
-  -webkit-animation: Animate-Cplus 4s;
-  -moz-animation: Animate-Cplus 4s;
-  -o-animation: Animate-Cplus 4s;
-  border-radius:20px;
-  width: 30%;
+  animation: Animate-Cplus4s 2s;
+  -webkit-animation: Animate-Cplus 2s;
+  -moz-animation: Animate-Cplus 2s;
+  -o-animation: Animate-Cplus 2s;
+  border-radius: 20px;
+  width: 45%;
   height: 50px;
   position: absolute;
   background-color: var(--arancione);
@@ -275,34 +302,34 @@ to {
   width: 10px;
 }
 to {
-  width: 30%}
+  width: 45%}
 } @-webkit-keyframes Animate-Cplus {
   from {
   width: 10px;
 }
 to {
-  width: 30%}
+  width: 45%}
 } @-moz-keyframes Animate-Cplus {
   from {
   width: 10px;
 }
 to {
-  width: 30%}
+  width: 45%}
 } @-o-keyframes Animate-Cplus {
   from {
   width: 10px;
 }
 to {
-  width: 30%}
+  width: 45%}
 }
 
 #Skill-JS {
-  animation: Animate-JS 5s;
-  -webkit-animation: Animate-JS 5s;
-  -moz-animation: Animate-JS 5s;
-  -o-animation: Animate-JS 5s;
+  animation: Animate-JS 2s;
+  -webkit-animation: Animate-JS 2s;
+  -moz-animation: Animate-JS 2s;
+  -o-animation: Animate-JS 2s;
   border-radius:20px;
-  width: 10%;
+  width: 17%;
   height: 50px;
   position: absolute;
   background-color: var(--arancione);
@@ -312,25 +339,25 @@ to {
   width: 10px;
 }
 to {
-  width: 10%}
+  width: 17%}
 } @-webkit-keyframes Animate-JS {
   from {
   width: 10px;
 }
 to {
-  width: 40%}
+  width: 17%}
 } @-moz-keyframes Animate-JS {
   from {
   width: 10px;
 }
 to {
-  width: 40%}
+  width: 17%}
 } @-o-keyframes Animate-JS {
   from {
   width: 10px;
 }
 to {
-  width: 70%}
+  width: 17%}
 } 
 
 .Skill-Area {
@@ -346,7 +373,9 @@ to {
 /* Stile del footer */
 footer {
   background-color: var(--arancionescuroscuro);
-  padding: 2.5rem 0;
+  padding-top: 50px;
+  border: 10px solid var(--nerochiaro);
+  border-style: ridge;
 }
 
 /* Contenitore del footer */
@@ -354,9 +383,6 @@ footer {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 50px 17%;
-  border: 20px solid var(--arancione);
-  border-style: ridge;
 }
 
 footer .flex {
@@ -386,15 +412,13 @@ footer img.h-8 {
 
 footer p {
   color: var(--bianco);
-  margin-top: 1.25rem;
-  margin-bottom: 1.5rem;
   max-width: 20rem;
   line-height: 1.5;
 }
 
 footer h3 {
   color: var(--bianco);
-  font-size: 1.25rem;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
