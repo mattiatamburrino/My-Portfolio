@@ -13,12 +13,12 @@
 /* Importo di 2 file per il font */
 @font-face {
   font-family: ChakraPetch;
-  src: url(./src/fonts/ChakraPetch-Bold.ttf);
+  src: url(../Il-Mio-Portfolio/src/fonts/ChakraPetch-Bold.ttf);
 }
 
 @font-face {
   font-family: SatisfyRegular;
-  src: url(./src/fonts/Satisfy-Regular.ttf);
+  src: url(../Il-Mio-Portfolio/src/fonts/Satisfy-Regular.ttf);
 }
 
 /* "ChakraPetch" è il Font di formattazione dell'intera pagina. */
