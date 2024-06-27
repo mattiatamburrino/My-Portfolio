@@ -1,0 +1,499 @@
+:root {
+    /* In questa lista possiamo salvare dei colori personalizzati e specifici. 
+    Inoltre possiamo anche modificare i valori senza dover sostituirli ogni volta nei selettori. */
+    --grigio: #dddddd;
+    --nerochiaro: #333;
+    --neroscuro: #111;
+    --bianco: #ffffff;
+    --arancione: #ff7f50;
+    --arancionescuro: #ff6b35;
+    --arancionescuroscuro: #b33000;
+  }
+  
+  /* Importo di 2 file per il font */
+  @font-face {
+    font-family: ChakraPetch;
+    src: url(../Il-Mio-Portfolio/src/fonts/ChakraPetch-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: SatisfyRegular;
+    src: url(../Il-Mio-Portfolio/src/fonts/Satisfy-Regular.ttf);
+  }
+  
+  /* "ChakraPetch" è il Font di formattazione dell'intera pagina. */
+  /* "margin: 0;" Rimuove il margine del browser di default. In modo che non ci siano spazi vuoti indesiderati. */
+  body {
+    font-family: ChakraPetch;
+    margin: 0;
+  }
+  
+  #articolo-principale {
+    width: 800px;
+    padding: 25px;
+    border: 20px solid var(--arancionescuro);
+    border-style: ridge;
+    float: left;
+  }
+  
+  #h1_articolo3 {
+    font-size: 60px;
+  }
+  
+  #h1_articolo2 {
+    font-size: 60px;
+  }
+  
+  /* Articoli principali */
+  main article {
+    background-color: var(--arancione);
+    padding: 30px;
+    padding-bottom: 50px;
+    border: 10px solid var(--nerochiaro);
+    border-style: ridge;
+    border-bottom: none;
+    border-top: none;
+  }
+  
+  span.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-10deg);
+    }
+    20% {
+      transform: rotate(12deg);
+    }
+    30% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(9deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .progetti {
+    padding-bottom: 330px;
+  }
+  
+  #h1_articolo_principale {
+    font-size: 80px;
+  }
+  
+  #p_articolo_principale {
+    font-size: 20px;
+    padding: 50px;
+    background-color: var(--arancionescuro);
+    border-radius: 10px;
+  }
+  
+  /* Navbar */
+  .nav_list {
+    background-color: var(--nerochiaro);
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* (ul > li) */
+  .elemento_navlist {
+    display: inline;
+    float: left;
+    font-size: 25px;
+  }
+  
+  /* ul > li > a */
+  .elemento_navlist a {
+    display: block;
+    padding: 20px 16px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--bianco);
+  }
+  
+  .elemento_navlist a:hover {
+    background-color: var(--neroscuro);
+  }
+  
+  /* Galleria delle immagini dei progetti */
+  div.galleria {
+    margin: 5px;
+    width: 180px;
+    border: 20px solid var(--arancionescuro);
+    border-style: ridge;
+    float: left;
+  }
+  
+  #comingsoongalleria {
+    height: 177px;
+  }
+  
+  div.galleria:hover {
+    border: 30px solid var(--bianco);
+    border-style: ridge;
+  }
+  
+  div.galleria img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  #SkillBox {
+    width: 46.1%;
+    height: auto;
+    background-color: #fff;
+    /* border: 1px solid #cdcdcd; */
+    padding: 10px;
+    border: 20px solid var(--arancionescuro);
+    border-style: ridge;
+  }
+  
+  /*  */
+  #SkillBox img {
+    width: 20%;
+    height: 10%;
+    margin: auto 35%;
+    padding: 10px;
+  }
+  
+  .SkillBar {
+    width: 95%;
+    height: 50px;
+    position: relative;
+    border-radius: 20px;
+    background: var(--grigio);
+    margin: 20px auto;
+  }
+  
+  /* Formattazione delle skill di programmazione */
+  #Skill-HTML {
+    border-radius: 20px;
+    animation: Animate-HTML 2s;
+    -webkit-animation: Animate-HTML 2s;
+    -moz-animation: Animate-HTML 2s;
+    -o-animation: Animate-HTML 2s;
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    background-color: var(--arancione);
+  }
+  @keyframes Animate-HTML {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  @-webkit-keyframes Animate-HTML {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  @-moz-keyframes Animate-HTML {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  @-o-keyframes Animate-HTML {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 90%;
+    }
+  }
+  
+  #Skill-CSS {
+    animation: Animate-CSS 2s;
+    -webkit-animation: Animate-CSS 2s;
+    -moz-animation: Animate-CSS 2s;
+    -o-animation: Animate-CSS 2s;
+    border-radius: 20px;
+    width: 65%;
+    height: 50px;
+    position: absolute;
+    background-color: var(--arancione);
+  }
+  @keyframes Animate-CSS {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 65%;
+    }
+  }
+  @-webkit-keyframes Animate-CSS {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 65%;
+    }
+  }
+  @-moz-keyframes Animate-CSS {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 65%;
+    }
+  }
+  @-o-keyframes Animate-CSS {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 65%;
+    }
+  }
+  
+  #Skill-Python {
+    border-radius: 20px;
+    animation: Animate-Python 2s;
+    -webkit-animation: Animate-Python 2s;
+    -moz-animation: Animate-Python 2s;
+    -o-animation: Animate-Python 2s;
+    width: 25%;
+    height: 50px;
+    position: absolute;
+    background-color: var(--arancione);
+  }
+  
+  @keyframes Animate-Python {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 15;
+    }
+  }
+  @-webkit-keyframes Animate-Python {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 15%;
+    }
+  }
+  @-moz-keyframes Animate-Python {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 15;
+    }
+  }
+  @-o-keyframes Animate-Python {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 15%;
+    }
+  }
+  
+  #Skill-Cplus {
+    animation: Animate-Cplus4s 2s;
+    -webkit-animation: Animate-Cplus 2s;
+    -moz-animation: Animate-Cplus 2s;
+    -o-animation: Animate-Cplus 2s;
+    border-radius: 20px;
+    width: 45%;
+    height: 50px;
+    position: absolute;
+    background-color: var(--arancione);
+  }
+  @keyframes Animate-Cplus {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 45%;
+    }
+  }
+  @-webkit-keyframes Animate-Cplus {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 45%;
+    }
+  }
+  @-moz-keyframes Animate-Cplus {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 45%;
+    }
+  }
+  @-o-keyframes Animate-Cplus {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 45%;
+    }
+  }
+  
+  #Skill-JS {
+    animation: Animate-JS 2s;
+    -webkit-animation: Animate-JS 2s;
+    -moz-animation: Animate-JS 2s;
+    -o-animation: Animate-JS 2s;
+    border-radius: 20px;
+    width: 17%;
+    height: 50px;
+    position: absolute;
+    background-color: var(--arancione);
+  }
+  @keyframes Animate-JS {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 17%;
+    }
+  }
+  @-webkit-keyframes Animate-JS {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 17%;
+    }
+  }
+  @-moz-keyframes Animate-JS {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 17%;
+    }
+  }
+  @-o-keyframes Animate-JS {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 17%;
+    }
+  }
+  
+  .Skill-Area {
+    z-index: 1;
+    float: left;
+    /* position: absolute; */
+    margin-top: 8px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+  }
+  
+  /* Stile del footer */
+  footer {
+    background-color: var(--arancionescuroscuro);
+    padding-top: 50px;
+    border: 10px solid var(--nerochiaro);
+    border-style: ridge;
+  }
+  
+  /* Contenitore del footer */
+  .container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  footer .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer .flex > * {
+    flex: 1 1 100%;
+    margin-bottom: 2rem;
+  }
+  
+  footer .flex > .w-full {
+    flex: 1 1 100%;
+  }
+  
+  footer .w-full .text-gray-600 {
+    color: var(--bianco);
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  
+  footer img.h-8 {
+    width: 100px;
+    height: 100px;
+  }
+  
+  footer p {
+    color: var(--bianco);
+    max-width: 20rem;
+    line-height: 1.5;
+  }
+  
+  footer h3 {
+    color: var(--bianco);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 1rem;
+    list-style: circle;
+  }
+  
+  footer ul li a {
+    color: var(--bianco);
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    color: var(--neroscuro);
+  }
+  
+  footer p:last-child {
+    margin-top: 1.5rem;
+    color: var(--bianco);
+  }
+  
