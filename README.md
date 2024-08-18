@@ -1,1 +1,1 @@
-This is a school project that showcases a portfolio built entirely with HTML and CSS. I have now made this my official portfolio, and it's freely available through GitHub Pages hosting. Feel free to explore the code and use it as a learning resource.
+This is a school project that showcases a portfolio built entirely with HTML and CSS. I have now made this my official portfolio, and it's freely available through GitHub Pages hosting. Feel free to explore the code and use it as a learning resource. I know that my portfolio is not easily adaptable to all screen sizes.
